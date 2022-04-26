@@ -9,17 +9,14 @@
     <body>
 
         <div class="siteheader">
-            Emils webbsida
+            Emilz
         </div>
 
         <div class="navbar">
-            <nav>
-                <ul>
-                    <li><a href="{{ url("home") }}">Home</a></li>
-                    <li><a href="{{ path("about") }}">About</a></li>
-                    <li><a href="{{ path("report") }}">Report</a></li>
-                    <li><a href="{{ path("debug") }}">Debug</a></li>
-            </nav>
+                    <a href="{{ url("home") }}">HOME</a>
+                    <a href="{{ path("about") }}">ABOUT</a>
+                    <a href="{{ path("report") }}">REPORT</a>
+                    <a href="{{ path("debug") }}">DEBUG</a>
         </div>
 
         {% block content %}
@@ -27,8 +24,7 @@
         {% endblock %}
 
         <div class="sitefooter">
-            Emil Olofsson
-            Emil@mail.com
+            ©Emilz 2022
         </div>
 
     </body>

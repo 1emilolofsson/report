@@ -33,7 +33,7 @@ class ReportController extends AbstractController
         return $this->render('report.html.twig');
     }
 
-        /**
+    /**
      * @Route("/api/lucky/number", name="lucky-number")
      */
     public function number(): Response
@@ -48,7 +48,7 @@ class ReportController extends AbstractController
         return new JsonResponse($data);
     }
 
-        /**
+    /**
      * @Route("/dev/debug", name="debug")
      */
     public function debug(): Response
@@ -60,4 +60,3 @@ class ReportController extends AbstractController
         return $this->render('debug.html.twig', $data);
     }
 }
-
